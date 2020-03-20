@@ -1,6 +1,7 @@
 # Copyright (C) 2017 Unlegacy-Android
 # Copyright (C) 2017 The LineageOS Project
 # Copyright (C) 2018 The PixelExperience Project
+# Copyright (C) 2020 The PixelPlusUI Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,4 +21,13 @@ CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/$(CUSTOM_VERSION).zip
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(CUSTOM_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(CUSTOM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(CUSTOM_TARGET_PACKAGE).md5sum
-	@echo "Package Complete: $(CUSTOM_TARGET_PACKAGE)" >&2
+	@echo -e ${CL_CYN}""${CL_CYN}
+	@echo -e ${CL_CYN}"______ _          _______ _           _   _ _____ "${CL_CYN}
+	@echo -e ${CL_CYN}"| ___ (_)        | | ___ \ |         | | | |_   _|"${CL_CYN}
+	@echo -e ${CL_CYN}"| |_/ /___  _____| | |_/ / |_   _ ___| | | | | |  "${CL_CYN}
+	@echo -e ${CL_CYN}"|  __/| \ \/ / _ \ |  __/| | | | / __| | | | | |  "${CL_CYN}
+	@echo -e ${CL_CYN}"| |   | |>  <  __/ | |   | | |_| \__ \ |_| |_| |_ "${CL_CYN}
+	@echo -e ${CL_CYN}"\_|   |_/_/\_\___|_\_|   |_|\__,_|___/\___/ \___/ "${CL_CYN}
+	@echo -e ${CL_CYN}""${CL_CYN}
+	@echo -e ${CL_CYN}"===========-Package Completed-==========="${CL_RST}
+	@echo -e ""

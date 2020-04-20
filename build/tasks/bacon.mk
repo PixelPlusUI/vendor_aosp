@@ -30,4 +30,10 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	@echo -e ${CL_CYN}"\_|   |_/_/\_\___|_\_|   |_|\__,_|___/\___/ \___/ "${CL_CYN}
 	@echo -e ${CL_CYN}""${CL_CYN}
 	@echo -e ${CL_CYN}"===========-Package Completed-==========="${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Zip: "${CL_YLW} $(CUSTOM_TARGET_PACKAGE)${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"MD5: "${CL_YLW}" `cat $(CUSTOM_TARGET_PACKAGE).md5sum | cut -d ' ' -f 1` "${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"SHA256: "${CL_YLW}" `sha256sum $(CUSTOM_TARGET_PACKAGE) | cut -d ' ' -f 1` "${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Size: "${CL_YLW}" `ls -l $(CUSTOM_TARGET_PACKAGE) | cut -d ' ' -f 5` "${CL_RST}
+	@echo -e ${CL_BLD}${CL_YLW}"Timestamp: "${CL_MAG} $(CUSTOM_BUILD_DATE_UTC) ${CL_RST}
+	@echo -e ${CL_CYN}"===========-----Thanks :)-----==========="${CL_RST}
 	@echo -e ""

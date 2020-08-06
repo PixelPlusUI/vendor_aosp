@@ -119,6 +119,11 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     Papers
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI \
+    NexusLauncherRelease
+
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

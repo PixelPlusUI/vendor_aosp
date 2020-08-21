@@ -26,4 +26,5 @@ CUSTOM_PROPERTIES := \
     org.pixelplusui.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelplusui.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.pixelplusui.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.pixelplusui.codename=$(PPUI_CODENAME)
+    org.pixelplusui.codename=$(PPUI_CODENAME) \
+    ro.pixelplusui.maintainer=$(PPUI_MAINTAINER)

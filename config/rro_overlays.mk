@@ -5,6 +5,8 @@ PRODUCT_PACKAGES += \
     BuiltInPrintServiceOverlay \
     CustomPixelLauncherOverlay \
     NavigationBarModeGesturalOverlayFS \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium \
     GooglePermissionControllerOverlay \
     PixelConfigOverlayCommon \
     TeleServiceOverlay \

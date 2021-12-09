@@ -237,3 +237,39 @@ $(call inherit-product, vendor/aosp/config/ota.mk)
 $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml \
+    AccuratistFont \
+    AclonicaFont \
+    Amarante \
+    BariolFont \
+    CagliostroFont \
+    CoconFont \
+    ComfortaaFont \
+    ComicSansFont \
+    CoolstoryFont \
+    ExotwoFont \
+    Fifa2018Font \
+    GoogleSansFont \
+    GrandHotelFont \
+    LatoFont \
+    LGSmartGothicFont \
+    LinotteFont \
+    NokiaPureFont \
+    NunitoFont \
+    OneplusSansFont \
+    OneplusSlateFont \
+    OswaldFont \
+    QuandoFont \
+    RedressedFont \
+    ReemKufiFont \
+    RobotoCondensedFont \
+    RosemaryFont \
+    RubikFont \
+    SamsungOneFont \
+    SonySketchFont \
+    StoropiaFont \
+    SurferFont \
+    UbuntuFont

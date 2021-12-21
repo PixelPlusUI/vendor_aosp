@@ -240,6 +240,13 @@ $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
+# UDFPS
+
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
+
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \

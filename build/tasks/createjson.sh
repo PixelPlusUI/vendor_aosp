@@ -34,8 +34,8 @@ if [ -f $existingOTAjson ]; then
 	version=`echo "$4" | cut -d'-' -f5`
 	v_max=`echo "$version" | cut -d'.' -f1 | cut -d'v' -f2`
 	v_min=`echo "$version" | cut -d'.' -f2`
-	version=`echo $v_max.$v_min`
-	download="https://download.ppui.site/eleven/'$1'/'$3'"
+	version=$4
+	download="https://download.ppui.site/eleven/$1/$3"
 	buildprop=$2/system/build.prop
 	linenr=`grep -n "ro.system.build.date.utc" $buildprop | cut -d':' -f1`
 	timestamp=`sed -n $linenr'p' < $buildprop | cut -d'=' -f2`
@@ -96,7 +96,7 @@ if [ -f $existingOTAjson ]; then
 			"md5": "'$md5'",
 			"sha256": "'$sha256'",
 			"size": '$size',
-			"version": "'$version'",
+			"version": '$version',
 			"buildtype": "'$buildtype'",
 			"forum": "'$forum'",
 			"firmware": "'$firmware'",

@@ -2,7 +2,7 @@
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
 # PixelPlusUI Props
-PPUI_BASE_VERSION = 4.2
+PPUI_BASE_VERSION = 4.3
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
 CUSTOM_DATE_MONTH := $(shell date -u +%m)

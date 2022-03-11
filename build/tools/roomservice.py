@@ -43,7 +43,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/ppui.xml"
-custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'snowcone')
+custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'sv2')
 custom_dependencies = "aosp.dependencies"
 org_manifest = "ppui-devices"  # leave empty if org is provided in manifest
 org_display = "PixelPlusUI-Devices"  # needed for displaying
